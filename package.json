@@ -1,0 +1,26 @@
+{
+  "name": "lendico_project",
+  "version": "1.0.0",
+  "description": "Test Project for Lendico Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naveed Riay",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.2.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
