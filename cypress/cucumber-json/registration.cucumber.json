@@ -23,7 +23,7 @@
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 2723000000
+              "duration": 5604000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I enter the registration data",
             "result": {
               "status": "passed",
-              "duration": 7712000000
+              "duration": 7101000000
             }
           },
           {
@@ -42,9 +42,8 @@
             "line": 8,
             "name": "I verify the input data",
             "result": {
-              "status": "failed",
-              "duration": 5638000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div.thank-you-content__data-block-row__text>' to contain '4 Jahre'\n    at Context.eval (https://lendicoqachallenge.azurewebsites.net/__cypress/tests?p=cypress\\integration\\registration.feature:197:38)\n    at Context.resolveAndRunStepDefinition (https://lendicoqachallenge.azurewebsites.net/__cypress/tests?p=cypress\\integration\\registration.feature:10681:29)\n    at Context.eval (https://lendicoqachallenge.azurewebsites.net/__cypress/tests?p=cypress\\integration\\registration.feature:10002:35)"
+              "status": "passed",
+              "duration": 1571000000
             }
           }
         ]

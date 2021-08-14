@@ -61,7 +61,10 @@ Then('I verify the input data', ()=>{
 
     cy.get(confirmation_page.creditDetails_title).should(($div) => { expect($div.text().trim()).equal('Kreditdetails');  });
     cy.get(confirmation_page.amount).should(($div) => { expect($div.text().trim()).equal('300,000.00 €');  });
-    cy.get(confirmation_page.duration).should('contain','4 Jahre');
+    cy.get(confirmation_page.duration).should(($div) => { 
+        let str = $div.text().trim();
+        expect(str.replace('\n                ',' ')).equal('4 Jahre');  
+    });
 
     cy.get(confirmation_page.company_info_title).should(($div) => { expect($div.text().trim()).equal('Firmeninformationen');  });
     cy.get(confirmation_page.company_name).should(($div) => { expect($div.text().trim()).equal('XYLOHOMA CORPORATION LTD');  });
