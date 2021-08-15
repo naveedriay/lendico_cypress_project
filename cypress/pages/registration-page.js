@@ -30,5 +30,6 @@ export class RegisterationPage
     marketingCheckbox = "[data-qa-id=submit-marketing-checkbox] .check"
 
     submitButton = '[data-qa-id=submit-form-button]'
-
+    validationMsg= '[data-qa-id=submit-form-button-div] div p'
+    //Nicht alle Felder wurden korrekt ausgefüllt. Bitte überprüfen Sie Ihre Angaben.
 }

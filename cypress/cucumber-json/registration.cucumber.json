@@ -9,10 +9,10 @@
     "uri": "registration.feature",
     "elements": [
       {
-        "id": "test-user-registration-to-lendio-test-page;test-anothter-site-functionality",
+        "id": "test-user-registration-to-lendio-test-page;verify-registration-data-successfully-submitted-&-received",
         "keyword": "Scenario",
         "line": 5,
-        "name": "Test anothter site functionality",
+        "name": "Verify Registration Data successfully submitted & received",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -23,7 +23,7 @@
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 5604000000
+              "duration": 4148000000
             }
           },
           {
@@ -33,17 +33,57 @@
             "name": "I enter the registration data",
             "result": {
               "status": "passed",
-              "duration": 7101000000
+              "duration": 7666000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I verify the input data",
+            "name": "I verify that input data is successfully received",
             "result": {
               "status": "passed",
-              "duration": 1571000000
+              "duration": 1645000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-user-registration-to-lendio-test-page;verify-form-validation-wont-let-me-submit-empty-form-data",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify form validation wont let me submit empty form data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the test website",
+            "result": {
+              "status": "passed",
+              "duration": 1690000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I try to submit the empty form",
+            "result": {
+              "status": "passed",
+              "duration": 187000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should get form validation error",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
             }
           }
         ]

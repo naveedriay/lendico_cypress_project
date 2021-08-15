@@ -1,12 +1,16 @@
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps"
 import { ConfirmationPage } from "../../../pages/confirmation-page";
-import {RegisterationPage} from "../../../pages/registeration-page"
+import {RegisterationPage} from "../../../pages/registration-page"
 
 const registration_page = new RegisterationPage();
 const confirmation_page = new ConfirmationPage();
 
 Given ('I visit the test website', ()=>{
     cy.visit("https://QA-CHALLENGE:jooTh9me@lendicoqachallenge.azurewebsites.net");
+})
+
+When('I try to submit the empty form', ()=> {
+    cy.get(registration_page.submitButton).click();
 })
 
 When ('I enter the registration data', ()=>{
@@ -46,7 +50,7 @@ When ('I enter the registration data', ()=>{
     cy.get(registration_page.submitButton).click();
 })
 
-Then('I verify the input data', ()=>{
+Then('I verify that input data is successfully received', ()=>{
 
 
     cy.get(confirmation_page.title).should(($div) => { expect($div.text().trim()).equal("Herr");  });
@@ -71,4 +75,8 @@ Then('I verify the input data', ()=>{
     cy.get(confirmation_page.established).should(($div) => { expect($div.text().trim()).equal('11.2011');  });
     cy.get(confirmation_page.company_address).should(($div) => { expect($div.text().trim()).equal('Stralauer Allee 3, 10245, Berlin');  });
 
+})
+
+Then('I should get form validation error', ()=>{
+    cy.get(registration_page.validationMsg).should('have.text', 'Nicht alle Felder wurden korrekt ausgefüllt. Bitte überprüfen Sie Ihre Angaben.');
 })
