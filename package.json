@@ -4,7 +4,11 @@
   "description": "Test Project for Lendico Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:verify": "cypress verify",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:integration": "cypress run --spec 'cypress/integration/*.feature'",
+    "cy:chrome": "cypress run --browser chrome --headed --spec 'cypress/integration/*.feature'"
   },
   "author": "Naveed Riay",
   "license": "ISC",
@@ -12,8 +16,7 @@
     "cypress": "^8.2.0"
   },
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.2.0",
-    "cypress-plugin-tab": "^1.0.5"
+    "cypress-cucumber-preprocessor": "^4.2.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,

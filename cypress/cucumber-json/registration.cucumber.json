@@ -23,7 +23,7 @@
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 4148000000
+              "duration": 6318000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I enter the registration data",
             "result": {
               "status": "passed",
-              "duration": 7666000000
+              "duration": 12496000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I verify that input data is successfully received",
             "result": {
               "status": "passed",
-              "duration": 1645000000
+              "duration": 1980000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 1690000000
+              "duration": 2120000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I try to submit the empty form",
             "result": {
               "status": "passed",
-              "duration": 187000000
+              "duration": 312000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I should get form validation error",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 33000000
             }
           }
         ]
