@@ -4,7 +4,8 @@ Feature: Test User Registration to Lendio Test page
 
     Scenario: Verify Registration Data successfully submitted & received
        Given I visit the test website
-       When I enter the registration data
+       And I fill in the registration form
+       When I submit the form data
        Then I verify that input data is successfully received
 
     # VALIDATION SCENARIO

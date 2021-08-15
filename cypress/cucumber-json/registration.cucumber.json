@@ -9,9 +9,59 @@
     "uri": "registration.feature",
     "elements": [
       {
+        "id": "test-user-registration-to-lendio-test-page;verify-registration-data-successfully-submitted-&-received",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify Registration Data successfully submitted & received",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I visit the test website",
+            "result": {
+              "status": "passed",
+              "duration": 2900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I fill in the registration form",
+            "result": {
+              "status": "passed",
+              "duration": 7431000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I submit the form data",
+            "result": {
+              "status": "passed",
+              "duration": 176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I verify that input data is successfully received",
+            "result": {
+              "status": "passed",
+              "duration": 1713000000
+            }
+          }
+        ]
+      },
+      {
         "id": "test-user-registration-to-lendio-test-page;verify-form-validation-wont-let-me-submit-empty-form-data",
         "keyword": "Scenario",
-        "line": 10,
+        "line": 12,
         "name": "Verify form validation wont let me submit empty form data",
         "tags": [],
         "type": "scenario",
@@ -19,231 +69,231 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 11,
+            "line": 13,
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 1779000000
+              "duration": 1774000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
+            "line": 14,
             "name": "I try to submit the empty form",
             "result": {
               "status": "passed",
-              "duration": 231000000
+              "duration": 174000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 13,
+            "line": 15,
             "name": "I should get form validation error",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 22000000
             }
           }
         ]
       },
       {
-        "id": "test-user-registration-to-lendio-test-page;verify-company-establish-date-strictly-accepts-correct-data-only",
+        "id": "test-user-registration-to-lendio-test-page;verify-validation-rules-on-company-establish-date-field",
         "keyword": "Scenario",
-        "line": 21,
-        "name": "Verify company establish date strictly accepts correct data only",
+        "line": 24,
+        "name": "Verify validation rules on company establish date field",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 19,
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 1627000000
+              "duration": 1167000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 20,
             "name": "I try to submit 'xx.yyyy' data",
             "result": {
               "status": "passed",
-              "duration": 588000000
+              "duration": 365000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 21,
             "name": "I get the validation msg 'Diese Angabe ist erforderlich.' next to the field",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 16000000
             }
           }
         ]
       },
       {
-        "id": "test-user-registration-to-lendio-test-page;verify-company-establish-date-strictly-accepts-correct-data-only",
+        "id": "test-user-registration-to-lendio-test-page;verify-validation-rules-on-company-establish-date-field",
         "keyword": "Scenario",
-        "line": 22,
-        "name": "Verify company establish date strictly accepts correct data only",
+        "line": 25,
+        "name": "Verify validation rules on company establish date field",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 19,
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 1876000000
+              "duration": 1224000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 20,
             "name": "I try to submit '99.9999' data",
             "result": {
               "status": "passed",
-              "duration": 547000000
+              "duration": 353000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 21,
             "name": "I get the validation msg 'Diese Angabe ist erforderlich.' next to the field",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 14000000
             }
           }
         ]
       },
       {
-        "id": "test-user-registration-to-lendio-test-page;verify-company-establish-date-strictly-accepts-correct-data-only",
+        "id": "test-user-registration-to-lendio-test-page;verify-validation-rules-on-company-establish-date-field",
         "keyword": "Scenario",
-        "line": 23,
-        "name": "Verify company establish date strictly accepts correct data only",
+        "line": 26,
+        "name": "Verify validation rules on company establish date field",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 19,
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 1543000000
+              "duration": 1391000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 20,
             "name": "I try to submit '13.1111' data",
             "result": {
               "status": "passed",
-              "duration": 554000000
+              "duration": 443000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 21,
             "name": "I get the validation msg 'Das Datum ist nicht gültig.' next to the field",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 23000000
             }
           }
         ]
       },
       {
-        "id": "test-user-registration-to-lendio-test-page;verify-company-establish-date-strictly-accepts-correct-data-only",
+        "id": "test-user-registration-to-lendio-test-page;verify-validation-rules-on-company-establish-date-field",
         "keyword": "Scenario",
-        "line": 24,
-        "name": "Verify company establish date strictly accepts correct data only",
+        "line": 27,
+        "name": "Verify validation rules on company establish date field",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 19,
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 1274000000
+              "duration": 1496000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 20,
             "name": "I try to submit '11.2021' data",
             "result": {
               "status": "passed",
-              "duration": 563000000
+              "duration": 453000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 21,
             "name": "I get the validation msg 'Das Datum ist nicht gültig.' next to the field",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 16000000
             }
           }
         ]
       },
       {
-        "id": "test-user-registration-to-lendio-test-page;verify-company-establish-date-strictly-accepts-correct-data-only",
+        "id": "test-user-registration-to-lendio-test-page;verify-validation-rules-on-company-establish-date-field",
         "keyword": "Scenario",
-        "line": 25,
-        "name": "Verify company establish date strictly accepts correct data only",
+        "line": 28,
+        "name": "Verify validation rules on company establish date field",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 19,
             "name": "I visit the test website",
             "result": {
               "status": "passed",
-              "duration": 1420000000
+              "duration": 1613000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 20,
             "name": "I try to submit '01.1900' data",
             "result": {
               "status": "passed",
-              "duration": 583000000
+              "duration": 424000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 21,
             "name": "I get the validation msg '' next to the field",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 12000000
             }
           }
         ]

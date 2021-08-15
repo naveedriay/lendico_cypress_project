@@ -18,7 +18,7 @@ When('I try to submit {string} data', (input_data) => {
     cy.get(registration_page.lastYearSales).check({force:true});
 })
 
-When ('I enter the registration data', ()=>{
+And ('I fill in the registration form', ()=>{
 
     cy.get(registration_page.companyName).type('XYLOHOMA CORPORATION LTD');
     // cy.get(registration_page.companyName).tab();
@@ -52,11 +52,14 @@ When ('I enter the registration data', ()=>{
     
     cy.get(registration_page.tncCheckbox).click({force:true});
     cy.get(registration_page.marketingCheckbox).click({force:true});
+    
+})
+
+When('I submit the form data', ()=>{
     cy.get(registration_page.submitButton).click();
 })
 
 Then('I verify that input data is successfully received', ()=>{
-
 
     cy.get(confirmation_page.title).should(($div) => { expect($div.text().trim()).equal("Herr");  });
     cy.get(confirmation_page.firstName).should(($div) => { expect($div.text().trim()).equal('Naveed');  });
