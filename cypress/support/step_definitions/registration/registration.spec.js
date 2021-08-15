@@ -13,6 +13,11 @@ When('I try to submit the empty form', ()=> {
     cy.get(registration_page.submitButton).click();
 })
 
+When('I try to submit {string} data', (input_data) => {
+    cy.get(registration_page.dateFounded).type(input_data);
+    cy.get(registration_page.lastYearSales).check({force:true});
+})
+
 When ('I enter the registration data', ()=>{
 
     cy.get(registration_page.companyName).type('XYLOHOMA CORPORATION LTD');
@@ -26,11 +31,11 @@ When ('I enter the registration data', ()=>{
     cy.get(registration_page.dateFounded).type('11.2011');
 
     cy.get(registration_page.legalForm).click({force:true});
-    cy.get('.len-custom-select__options').should('be.visible');
+    cy.get(registration_page.legalFormOptions).should('be.visible');
     cy.get('div.len-custom-select__options > span:nth-child(1)').click();
 
     cy.get(registration_page.loanPurpose).click({force:true});
-    cy.get('.len-custom-select__options').should('be.visible');
+    cy.get(registration_page.loanPurposeOptions).should('be.visible');
     cy.get('div.len-custom-select__options > span:nth-child(1)').click();
     
 
@@ -79,4 +84,10 @@ Then('I verify that input data is successfully received', ()=>{
 
 Then('I should get form validation error', ()=>{
     cy.get(registration_page.validationMsg).should('have.text', 'Nicht alle Felder wurden korrekt ausgefüllt. Bitte überprüfen Sie Ihre Angaben.');
+})
+
+Then('I get the validation msg {string} next to the field', (expected_msg) => {
+    cy.get(registration_page.dateFounded_errorMsg).should( ($div) => {
+        expect($div.text().trim()).equal(expected_msg);
+    });  
 })

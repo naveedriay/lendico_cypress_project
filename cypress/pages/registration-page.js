@@ -6,11 +6,13 @@ export class RegisterationPage
 
     companyName  = '#companyName'
     legalForm    = "div.company-information-container.section-form.first-section > div.company-info-container.row > div.col-sm-6.first-column > fieldset:nth-child(1) > div > div.len-custom-select > div > div" // drop down  
+    legalFormOptions='.len-custom-select__options'
     lastYearSales= '.form-group input[value=after50K]' // radio button
     billingStreet= '[data-qa-id=company-info-street] input' //input[name='search.BillingStreet']
     dateFounded  = "input[name='Date_Founded__c']"
     postcode     = "input[name='search.postcodeDe']"
     loanPurpose  = 'div.company-information-container.section-form.first-section > div.company-info-container.row > div.col-sm-6.second-column > fieldset:nth-child(3) > div > div.len-custom-select > div > div' // drop down
+    loanPurposeOptions = '.len-custom-select__options'
     city         = "input[name='search.city']"
 
     Salutation_Mr = "[data-qa-id=representative-info-salutation] input[value=Herr]"
@@ -31,5 +33,5 @@ export class RegisterationPage
 
     submitButton = '[data-qa-id=submit-form-button]'
     validationMsg= '[data-qa-id=submit-form-button-div] div p'
-    //Nicht alle Felder wurden korrekt ausgefüllt. Bitte überprüfen Sie Ihre Angaben.
+    dateFounded_errorMsg='[data-qa-id=company-info-founded-date] p'
 }
